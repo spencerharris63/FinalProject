@@ -1,0 +1,142 @@
+body {
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+    font-family: "Comic Sans MS", cursive, "Arial Black", "Impact", "Chalkboard", fantasy, sans-serif;  
+    color: #333;
+    font-size: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .topspacer{
+    height: 20px;
+  }
+
+  h1{
+    color: rgb(32, 32, 32);
+    font-size: 3rem;
+  }
+
+  p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #d2e6ee;
+    padding: 3%;
+    line-height: 1.75;
+    font-weight: 500;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #e40000;
+  }
+  
+  nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul a {
+    padding: 1rem;
+    background-color: rgb(214, 217, 238);
+    border-radius: 10px 10px 0 0;
+    margin: auto 10px;
+  }
+
+  nav ul a:hover {
+    padding: 1rem;
+    background-color: rgb(190, 193, 255);
+    border-radius: 10px 10px 0 0;
+    margin: auto 10px;
+  }
+  
+  .content {
+    /* margin-top: 2rem; */
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border: 2px solid #ff00006e;
+    border-radius: 10px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+    /* Two columns at tablet width */
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    /* One column at mobile width */
+    .gallery {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .gif-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .gif-gallery img {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    /* One column at mobile width */
+    .gif-gallery {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .textbox {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    background-color: white;
+    border: 2px solid rgb(113, 113, 113);
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    vertical-align: top; /* Align the text at the top */
+    resize: none; /* Prevent resizing of the text box */
+    overflow: auto; /* Enable text wrapping */
+    line-height: normal; /* Reset line height to default */
+  }
+  
+  
+
+  button{
+    padding: 10px 30px;
+    background-color: rgb(0, 26, 255);
+    color: #fff;
+    font-size: medium;
+    border-radius: 5px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4); /* Add drop shadow */
+  }
+
+  #movingButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1.5s ease-out; /* Add a CSS transition */
+  }
