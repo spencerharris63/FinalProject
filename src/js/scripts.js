@@ -1,4 +1,3 @@
-// this code moves the button around the page
 var button = document.getElementById("movingButton");
 document.addEventListener('mousemove', handleMouseMove);
 
